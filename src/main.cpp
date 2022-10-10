@@ -11,7 +11,7 @@ int main(int argc, char * argv[])
 
     std::cout << add(a, b) << std::endl;
 
-    std::cout << argv[0] << "Version"  << miyata_VERSION_MAJOR << "." << miyata_VERSION_MINOR << std::endl;
+    std::cout << argv[0] << "Version "  << miyata_VERSION_MAJOR << "." << miyata_VERSION_MINOR << std::endl;
 
 
 
