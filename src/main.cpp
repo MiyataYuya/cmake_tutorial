@@ -1,7 +1,10 @@
 #include <iostream>
-#include "adder.h"
+// #include "adder.h"
 #include <GLFW/glfw3.h>
 #include <miyataconfig.h>
+#ifdef USE_ADDER
+    #include <adder.h>
+#endif
 
 int main(int argc, char * argv[])
 {
@@ -9,7 +12,11 @@ int main(int argc, char * argv[])
 
     std::cout << "Hello, world!!\n";
 
-    std::cout << add(a, b) << std::endl;
+#ifdef USE_ADDER
+    std::cout << "using Adder lib:" << add(a, b) << std::endl;
+#else
+    std::cout << "NOT using Adder: " << 123.4f + 33.3f << std::endl;
+#endif
 
     std::cout << argv[0] << "Version "  << miyata_VERSION_MAJOR << "." << miyata_VERSION_MINOR << std::endl;
 

@@ -1,1 +1,1 @@
-cmake -B build
+cmake -DUSE_ADDER=ON -B build

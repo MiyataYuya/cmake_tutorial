@@ -1,2 +1,4 @@
 #define miyata_VERSION_MAJOR @miyata_VERSION_MAJOR@
 #define miyata_VERSION_MINOR @miyata_VERSION_MINOR@
+
+#cmakedefine USE_ADDER
